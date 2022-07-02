@@ -1,4 +1,4 @@
-# Artemis App (artemis)
+# Artemis App (artemis).
 
 A website for online learning
 
