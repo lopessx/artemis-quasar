@@ -9,9 +9,23 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
+import { api } from 'boot/axios.js'
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'IndexPage',
+
+  setup () {
+    return {
+      first: ref('')
+    }
+  },
+
+  created () {
+    api.get('/')
+      .then((response) => {
+        console.log(JSON.stringify(response.data))
+      })
+  }
 })
 </script>
