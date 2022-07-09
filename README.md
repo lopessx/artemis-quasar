@@ -2,25 +2,10 @@
 
 A website for online learning
 
-## Install the dependencies
-```bash
-npm install
-```
+## Front
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+Has the front-end of the project in Vue-Quasar.
 
-### Lint the files
-```bash
-npm run lint
-```
+## API
 
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+Has the back-end of the project with Lumen.
