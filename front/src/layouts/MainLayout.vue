@@ -37,6 +37,14 @@
       </q-list>
     </q-drawer>
 
+    <q-footer elevated class="toolbar-footer">
+      <q-toolbar class="footer">
+        <div class="text-footer">
+          Desenvolvido por <a href="https://github.com/lopessx"> @lopessx </a> e <a href="https://github.com/Porfirio-Prodigy"> @Porfirio-Prodigy</a>
+        </div>
+      </q-toolbar>
+    </q-footer>
+
     <q-page-container>
       <router-view />
     </q-page-container>
