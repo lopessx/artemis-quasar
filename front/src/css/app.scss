@@ -1,1 +1,12 @@
 // app global css in SCSS form
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cormorant+SC&display=swap');
+
+.header-title {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.toolbar {
+  color: #242423;
+  background-color: #F5CB5C;
+}

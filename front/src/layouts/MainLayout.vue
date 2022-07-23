@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="toolbar">
         <q-btn
           flat
           dense
@@ -11,11 +11,9 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
-          Quasar App
+        <q-toolbar-title class="header-title">
+          Artemis Academy
         </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -28,7 +26,7 @@
         <q-item-label
           header
         >
-          Essential Links
+          Artemis Academy
         </q-item-label>
 
         <EssentialLink
@@ -51,47 +49,30 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
+    title: 'Matérias',
+    caption: 'Voltado para o meio Acadêmico.',
     icon: 'school',
-    link: 'https://quasar.dev'
+    link: '/materias'
+  },
+  {
+    title: 'Complementar',
+    caption: 'Conhecimentos altamente demandados.',
+    icon: 'auto_stories',
+    link: '/complementar'
+  },
+  {
+    title: 'Desenvolvimento',
+    caption: 'Voltado para o desenvolvimento pessoal e profissional',
+    icon: 'psychology',
+    link: '/desenvolvimento'
   },
   {
     title: 'Github',
-    caption: 'github.com/quasarframework',
+    caption: 'Artemis Github',
     icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
+    link: 'https://github.com/lopessx/artemis-quasar'
   }
+
 ]
 
 export default defineComponent({
